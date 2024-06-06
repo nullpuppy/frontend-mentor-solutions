@@ -9,3 +9,10 @@ The first learning path on Frontend Mentor. Very simple component, just styling 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/qr-code-component/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/qr-code-component)
 
+
+## Blog Preview Card
+
+The second project in the first learning path on Frontend Mentor. Another fairly simple component; styling a card to display an image with some preview data far a blog post.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/blog-preview-card/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/blog-preview-card/)
