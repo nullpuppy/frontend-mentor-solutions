@@ -64,15 +64,6 @@ img {
     font-weight: 800;
 }
 
-.card a, .card a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card a:hover {
-    color: var(--yellow);
-}
-
 .card__img {
     margin-block-end: 10px;
     width: 288px;
@@ -113,6 +104,14 @@ img {
     margin-block-start: 10px;
     margin-block-end: 10px;
     align-items: center;
+}
+
+.card:hover {
+    box-shadow: 16px 16px 0px 0px var(--black);
+    cursor: pointer;
+    h1,h2,h3,h4,h5,h6 {
+        color: var(--yellow);
+    }
 }
 
 .attribution {
