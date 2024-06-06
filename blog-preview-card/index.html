@@ -4,31 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+    <main>
+      <!-- Blog Preview Card -->
+      <section class="card">
 
-  Learning
+        <img class="card__img" src="assets/images/illustration-article.svg" width="280px" height="170px">
 
-  Published 21 Dec 2023
+        <button class="card__badge">
+          Learning
+        </button>
 
-  HTML & CSS foundations
+        <p class="card__pubdate">
+          Published 21 Dec 2023
+        </p>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+        <h3 class="card__title">
+          <a href="">
+            HTML & CSS foundations
+          </a>
+        </h3>
 
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <p class="card__desc">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+
+        <footer>
+          <img
+            class="author_avatar"
+            src="assets/images/image-avatar.webp"
+            width="28px"
+            height="28px"
+            alt="Greg Hooper's profile picture. Brown haired man with a blue t-shirt looking to the left with a white brick wall in the background.">
+          <p>
+            Greg Hooper
+          </p>
+        </footer>
+
+      </section>
+
+    </main>
+  <!-- Attribution footer -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>

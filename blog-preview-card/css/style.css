@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+html, body {
+    height: 100%;
+    font-family: "FigTree", "sans-serif";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+body {
+    background-color: var(--yellow);
+
+    min-height: 100dvh;
+
+    margin: auto;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: auto;
+    display: flex;
+}
+
+footer {
+    bottom: 0;
+    flex-shrink: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+
+    width: 280px;
+    padding: 20px;
+    box-shadow: 8px 8px 0px 0px var(--black);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card :is(h1,h2,h3,h4,h5,h6) {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.card a, .card a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card a:hover {
+    color: var(--yellow);
+}
+
+.card__img {
+    margin-block-end: 10px;
+    width: 288px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card button {
+    display: inline;
+    font-size: 0.75rem;
+    font-weight: 800;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 4px;
+    padding-block: 0.25rem;
+    padding-inline: 0.75rem;
+    width: fit-content;
+}
+
+.card__pubdate {
+    font-size: 0.75rem;
+}
+
+.card__desc {
+    color: var(--grey);
+    font-size: 0.875rem;
+}
+
+.card footer p {
+    padding-inline-start: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.card footer {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
