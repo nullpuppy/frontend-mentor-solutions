@@ -18,7 +18,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/recipe-page/)
-- Live Site URL: [GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/recipe-card/)
+- Live Site URL: [GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/recipe-page/)
 
 ## My process
 
