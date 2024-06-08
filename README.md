@@ -23,3 +23,10 @@ The third project in the first learning path on Frontend Mentor. Displays an use
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/social-links-profile/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/social-links-profile/)
+
+## Recipe Page
+
+The forth project in the first learning path on Frontend Mentor. Displays an user avatar, name, location, a tagline and a list of social links for that user.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/recipe-page/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/recipe-page/)
