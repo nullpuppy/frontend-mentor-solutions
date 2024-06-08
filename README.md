@@ -16,3 +16,10 @@ The second project in the first learning path on Frontend Mentor. Another fairly
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/blog-preview-card/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/blog-preview-card/)
+
+## Social Links Profile
+
+The third project in the first learning path on Frontend Mentor. Displays an user avatar, name, location, a tagline and a list of social links for that user.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/blog-preview-card/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/blog-preview-card/)

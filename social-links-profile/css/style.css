@@ -1,0 +1,129 @@
+:root {
+    /* Primary */
+    --green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: "Inter", "sans-serif";
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: var(--off-black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-basis: content;
+    margin: auto;
+}
+
+footer {
+    margin-block-start: 5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    align-self: center;
+}
+
+.card {
+    align-items: center;
+    background-color: var(--dark-grey);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    border-radius: 1rem;
+    padding-block: 2.9rem 2.3rem;
+    width: 380px;
+}
+
+.social-avatar {
+    border-radius: 50%;
+}
+
+.social-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-block-start: 1.7rem;
+    margin-block-end: 0.7rem;
+}
+
+.social-location {
+    color: var(--green);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.social-tagline {
+    margin-block: 1.8rem 1.4rem;
+    font-size: 1rem;
+    font-weight: inherit;
+}
+
+.social-link {
+    align-content: center;
+    background-color: var(--grey);
+    border-radius: 0.5rem;
+    color: inherit;
+    flex-shrink: 1;
+    font-weight: 600;
+    height: 3rem;
+    margin-block: .5rem;
+    text-align: center;
+    width: 300px;
+}
+
+.social-link:hover {
+    background-color: var(--green);
+    color: var(--grey);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .card {
+        border-radius: 0.5rem;
+        padding-block: 1.6rem 1rem;
+        width: 324px;
+    }
+
+    .social-link {
+        width: 280px;
+        flex-shrink: 1;
+        min-width: fit-content;
+    }
+}
+
+.attribution {
+    font-size: 0.8rem; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
