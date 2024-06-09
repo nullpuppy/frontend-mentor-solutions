@@ -26,7 +26,14 @@ The third project in the first learning path on Frontend Mentor. Displays an use
 
 ## Recipe Page
 
-The forth project in the first learning path on Frontend Mentor. Displays an user avatar, name, location, a tagline and a list of social links for that user.
+The forth project in the first learning path on Frontend Mentor. Displays a recipe in a single column, that resizes a bit based on page width.
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/recipe-page/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/recipe-page/)
+
+## Product Preview Card Component
+
+The first project in the second learning path on Frontend Mentor, which focuses on responsive design. Displays a product image, category, name, description and price on a card.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/product-preview-card-component/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/product-preview-card-component/)
