@@ -37,3 +37,10 @@ The first project in the second learning path on Frontend Mentor, which focuses 
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/product-preview-card-component/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/product-preview-card-component/)
+
+## Four Card Feature Section
+
+The second project in the second learning path on Frontend Mentor, which focuses on responsive design. Displays some cards in a unique layout.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/four-card-feature-section/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/four-card-feature-section/)
