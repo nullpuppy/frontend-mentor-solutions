@@ -40,7 +40,14 @@ The first project in the second learning path on Frontend Mentor, which focuses 
 
 ## Four Card Feature Section
 
-The second project in the second learning path on Frontend Mentor, which focuses on responsive design. Displays some cards in a unique layout.
+The second project in the second learning path on Frontend Mentor, which focuses on responsive design. Displays some cards in an unique layout.
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/four-card-feature-section/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/four-card-feature-section/)
+
+## Testimonials Grid Section
+
+The third project in the second learning path on Frontend Mentor, which focuses on responsive design. Displays user testimonials in an unique layout.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/testimonials-grid-section/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/testimonials-grid-section/)
