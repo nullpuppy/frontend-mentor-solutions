@@ -51,3 +51,10 @@ The third project in the second learning path on Frontend Mentor, which focuses 
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/testimonials-grid-section/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/testimonials-grid-section/)
+
+## Article Preview Component
+
+The first project in the third learning path on Frontend Mentor, which focuses on javascript fundamental. Displays a card with an image and some text. Uses js to adjust visibility of a share popup "dialog".
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/article-preview-component/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/article-preview-component/)

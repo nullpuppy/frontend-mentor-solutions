@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/nullpuppy/frontend-mentor-solutions/article-preview-component/)
+- Solution URL: [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/article-preview-component/)
 - Live Site URL: [GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/article-preview-component/)
 
 ## My process
