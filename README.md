@@ -58,3 +58,10 @@ The first project in the third learning path on Frontend Mentor, which focuses o
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/article-preview-component/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/article-preview-component/)
+
+## Newsletter Signup Component with Success Message
+
+The second project in the third learning path on Frontend Mentor, which focuses on javascript fundamental. Displays a card with an image, some text and a form with an input field and submit button. Uses javascript to do some basic email validation and modal display.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/newsletter-sign-up-with-success-message/)
+[Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/newsletter-sign-up-with-success-message/)
