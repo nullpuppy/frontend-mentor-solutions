@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/newsletter-signup-with-success-message/)
-- Live Site URL: [GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/newsletter-signup-with-success-message/)
+- Solution URL: [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/newsletter-sign-up-with-success-message/)
+- Live Site URL: [GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/newsletter-sign-up-with-success-message/)
 
 ## My process
 
