@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+
+:root {
+    /* Primary */
+    --tomato: hsl(4, 100%, 67%);
+
+    /* Neutral */
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-normal: "Roboto", "sans-serif";
+    --font-bold: "Roboto Bold", "sans-serif";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--font-normal);
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+
+    background-color: var(--charcoal-grey);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: none;
+}
+
+dialog {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+dialog[open] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+dialog {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1.5s allow-discrete;
+}
+
+@starting-style {
+    dialog[open] {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+    transition: all 700ms allow-discrete;
+}
+
+dialog[open]::backdrop {
+    background-color: rgb(0 0 0 / 33%);
+}
+
+@starting-style {
+    dialog[open]::backdrop {
+        background-color: rgb(0 0 0 / 33%);
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    background-color: var(--dark-slate-grey);
+    color: var(--grey);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#newsletter-signup-card {
+    display: flex;
+    max-width: 58rem;
+}
+
+.bold {
+    font-family: var(--font-bold);
+}
+
+.card {
+    display: flex;
+    border-radius: 2rem;
+    background-color: var(--white);
+    color: var(--dark-slate-grey);
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    margin-inline: 2.5rem;
+    box-shadow: 0.5rem 0.5rem 4rem 0.5rem var(--dark-slate-grey);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    padding-inline: 2.5rem;
+    gap: 1.7rem;
+}
+
+.card-body h1 {
+    font-size: 3.5rem;
+    font-family: var(--font-bold);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.card-body p {
+    line-height: 1.3;
+}
+
+/* TODO this should be more narrowly focused */
+.card-body li {
+    list-style: none;
+}
+
+#newsletter-signup-card .card-body li {
+    min-height: 2rem;
+    background-image: url("../assets/images/icon-list.svg");
+    background-repeat: no-repeat;
+    padding-inline-start: 2.35rem;
+    align-self: center;
+}
+
+.card-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-body label {
+    position: relative;
+    font-size: 0.75rem;
+    font-family: var(--font-bold);
+}
+
+.card-body label span.form-error {
+    position: absolute;
+    right: 0;
+}
+
+.card-body input {
+    border: 1px solid var(--grey);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    width: 100%;
+    margin-block: 0.5rem;
+}
+
+.card-body input.form-error {
+    border-color: var(--tomato);
+    background-color: color-mix(in lab, var(--tomato) 20%, var(--white));
+}
+
+.card-body button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    padding: 1rem;
+    width: 100%;
+}
+
+.card-body button:hover {
+    background-color: var(--tomato);
+}
+
+.card-body button:active {
+    background-color: color-mix(in lab, var(--white) 20%, var(--tomato));
+}
+
+.form-error {
+    color: var(--tomato);
+}
+
+@media (max-width: 50em) {
+    .img-sm {
+        display: block;
+    }
+
+    .img-lg {
+        display: none;
+    }
+
+    dialog:modal {
+        max-width: 100vw;
+        max-height: 100dvh;
+    }
+
+    dialog {
+        overflow: hidden;
+    }
+
+    #newsletter-signup-card.card {
+        max-width: 23.5rem;
+        flex-direction: column-reverse;
+        padding-block-start: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        padding-block-end: 1.5rem;
+    }
+
+    #newsletter-signup-success {
+        height: 100dvh;
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    #newsletter-signup-success .card {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: unset;
+        height: 100dvh;
+    }
+
+    #newsletter-signup-success .card-body {
+        max-width: 23.5rem;
+        padding-block: 2rem;
+        padding-inline: 1rem;
+    }
+
+    #newsletter-signup-success .card-body :first-child {
+        margin-block-start: auto;
+    }
+
+    #newsletter-signup-success .card-body button {
+        margin-block-start: auto;
+        align-self: flex-end;
+
+    }
+
+    #newsletter-signup-success .card-body h1 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 50em) {
+    .img-sm {
+        display: none;
+    }
+
+    .img-lg {
+        display: block;
+    }
+
+    #newsletter-signup-success .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        max-width: 31rem;
+    }
+
+    #newsletter-signup-success .card-body {
+        gap: 2rem;
+        padding-block: 2rem;
+    }
+}
