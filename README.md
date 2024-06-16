@@ -9,7 +9,6 @@ The first learning path on Frontend Mentor. Very simple component, just styling 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/qr-code-component/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/qr-code-component)
 
-
 ## Blog Preview Card
 
 The second project in the first learning path on Frontend Mentor. Another fairly simple component; styling a card to display an image with some preview data far a blog post.
@@ -54,14 +53,21 @@ The third project in the second learning path on Frontend Mentor, which focuses 
 
 ## Article Preview Component
 
-The first project in the third learning path on Frontend Mentor, which focuses on javascript fundamental. Displays a card with an image and some text. Uses js to adjust visibility of a share popup "dialog".
+The first project in the third learning path on Frontend Mentor, which focuses on javascript fundamentals. Displays a card with an image and some text. Uses js to adjust visibility of a share popup "dialog".
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/article-preview-component/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/article-preview-component/)
 
 ## Newsletter Signup Component with Success Message
 
-The second project in the third learning path on Frontend Mentor, which focuses on javascript fundamental. Displays a card with an image, some text and a form with an input field and submit button. Uses javascript to do some basic email validation and modal display.
+The second project in the third learning path on Frontend Mentor, which focuses on javascript fundamentals. Displays a card with an image, some text and a form with an input field and submit button. Uses javascript to do some basic email validation and modal display.
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/newsletter-sign-up-with-success-message/)
 [Live Site](https://nullpuppy.github.io/frontend-mentor-solutions/newsletter-sign-up-with-success-message/)
+
+# Time Tracking Dashboard
+
+The thrid project in the third learning path on Frontend Mentor, which focuses on javascript fundamentals. This displays a dashboard with tiles with data pulled in from a "remote" source in json format.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/time-tracking-dashboard/)
+[GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/time-tracking-dashboard/)
