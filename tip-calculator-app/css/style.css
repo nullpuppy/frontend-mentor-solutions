@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    /* Primary */
+    --clr-strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --clr-very-dark-cyan: hsl(183, 100%, 15%);
+    --clr-dark-grayish-cyan: hsl(186, 14%, 43%);
+    --clr-grayish-cyan: hsl(184, 14%, 56%);
+    --clr-light-grayish-cyan: hsl(185, 41%, 84%);
+    --clr-very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-hover: color-mix(in lab, var(--clr-strong-cyan) 35%, var(--clr-light-grayish-cyan));
+    --clr-orangered: #D57F68;
+
+    --font-monospace: "Space Mono", monospace;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+input,
+button {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    border: none;
+}
+
+
+html,
+body {
+    font-family: var(--font-monospace);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-light-grayish-cyan);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+body > footer {
+    background-color: color-mix(in lab, var(--clr-very-light-grayish-cyan) 85%, var(--strong-cyan));
+    box-shadow: 0 0 0.25em 0.25em var(--clr-very-dark-cyan);
+    color: var(--clr-very-dark-cyan);
+    padding: 0.5em;
+    margin-block-start: 5rem;
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: var(--clr-strong-cyan);
+    }
+
+    .attribution a:hover {
+        color: var(--clr-very-dark-cyan);
+        filter: drop-shadow(0 0 0.25em var(--clr-strong-cyan));
+    }
+}
+
+header > .logo {
+    margin-block: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    background-color: var(--clr-white);
+    color: var(--clr-very-dark-cyan);
+    box-shadow: 1em 1em 4em 0.25em var(--clr-very-dark-cyan);
+    border-radius: 1.5rem;
+}
+
+.calc-input {
+    display: grid;
+    gap: 1rem;
+}
+
+.calc-input .tip-amount {
+    display: grid;
+    padding-block-start: 1rem;
+    list-style: none;
+    gap: 1rem;
+}
+
+.calc-input .tip-amount ul {
+    outline: 3px solid sandybrown;
+}
+
+.calc-input .tip-amount li {
+    color: var(--clr-white);
+    flex: 1 1 0px;
+    flex-wrap: wrap;
+    background: var(--clr-very-dark-cyan);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+/* custom tip */
+.calc-input .tip-amount li:last-child {
+    padding: 0;
+    background-color: var(--clr-white);
+}
+
+.calc-input .tip-amount li:last-child span.error {
+    position: absolute;
+    color: var(--clr-orangered);color: var(--clr-orangered);
+    background-color: white;
+    right: 0;
+    bottom: -1em;
+    font-size: 1rem;
+}
+
+.calc-input .tip-amount li:hover {
+    cursor: pointer;
+    color: var(--clr-very-dark-cyan);
+    background-color: var(--clr-hover);
+}
+
+.calc-input .tip-amount li.selected:not(:has([data-amount="custom"])) {
+    background-color: var(--clr-strong-cyan);
+    color: var(--clr-very-dark-cyan);
+}
+
+.calc-input input.money {
+    background-image: url('../images/icon-dollar.svg');
+}
+
+.calc-input input.people {
+    background-image: url('../images/icon-person.svg');
+}
+
+.calc-input label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    color: var(--clr-dark-grayish-cyan);
+    padding-block: 1rem;
+}
+
+span.error {
+    align-self: end;
+    color: var(--clr-orangered);
+}
+
+
+.calc-input input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: end;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    background-color: var(--clr-very-light-grayish-cyan);
+    color: var(--clr-very-dark-cyan);
+    background-position: 1rem;
+    background-repeat: no-repeat;
+}
+
+.calc-input input:active,
+.calc-input input:hover,
+.calc-input input:focus {
+    outline: 3px solid var(--clr-strong-cyan);
+}
+
+
+.calc-input input:invalid,
+.calc-input input.error {
+    outline: 3px solid var(--clr-orangered);
+}
+
+.calc-results {
+    display: grid;
+    padding: 2rem 1rem 1rem 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    background-color: var(--clr-very-dark-cyan);
+    color: var(--clr-strong-cyan);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.calc-results > * {
+    align-self: start;
+}
+
+.calc-results div {
+    /* Tip Amount/Total */
+    .label:nth-child(1) {
+        color: var(--clr-white);
+    }
+
+    /* / person*/
+    .label:nth-child(2) {
+        font-weight: initial;
+        color: var(--clr-grayish-cyan);
+    }
+}
+
+.calc-results :has(.total) {
+    align-self: start;
+    justify-self: end;
+    line-height: 1;
+}
+
+.calc-results .total {
+    font-size: 1.5rem;
+}
+
+.calc-results .button {
+    grid-column: 1 / 3;
+    align-self: end;
+    grid-row: 4;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    background-color: var(--clr-strong-cyan);
+    color: var(--clr-very-dark-cyan);
+}
+
+.calc-results .button:disabled {
+    background-color: color-mix(in lab, var(--clr-very-dark-cyan) 75%, var(--strong-cyan));
+}
+
+.calc-results .button:is(:hover, :focus) {
+    background-color: var(--clr-hover);
+}
+
+@media screen and (max-width: 50.5em) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card .tip-amount {
+        place-content: center;
+        text-align: center;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .calc-results {
+    }
+}
+
+@media screen and (min-width: 50.5em) {
+    header > .logo {
+        margin-block: 2.5rem 3rem;
+    }
+
+    main {
+        gap: 4rem;
+    }
+
+    .card {
+        max-width: 57.5rem;
+        padding: 2rem 2rem 2rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-inline: 2rem;
+
+        background-color: var(--clr-white);
+        color: var(--clr-very-dark-cyan);
+        box-shadow: 1em 1em 4em 0.25em var(--clr-very-dark-cyan);
+        border-radius: 1.5rem;
+    }
+
+    .calc-input {
+        padding-inline-end: 2.25rem;
+    }
+
+    .card .tip-amount {
+        place-content: center;
+        text-align: center;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .calc-results .total {
+        font-size: 3rem;
+    }
+
+    .calc-results {
+        padding: 3.5rem 2.5rem 2rem;
+    }
+
+}

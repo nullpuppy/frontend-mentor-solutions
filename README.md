@@ -67,7 +67,14 @@ The second project in the third learning path on Frontend Mentor, which focuses 
 
 # Time Tracking Dashboard
 
-The thrid project in the third learning path on Frontend Mentor, which focuses on javascript fundamentals. This displays a dashboard with tiles with data pulled in from a "remote" source in json format.
+The third project in the third learning path on Frontend Mentor, which focuses on javascript fundamentals. This displays a dashboard with tiles with data pulled in from a "remote" source in json format.
 
 [Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/time-tracking-dashboard/)
 [GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/time-tracking-dashboard/)
+
+# Tip Calculator App
+
+The forth project in the third learning path on Frontend Mentor, which focuses on javascript fundamentals. This displays a dashboard with tiles with data pulled in from a "remote" source in json format.
+
+[Code](https://github.com/nullpuppy/frontend-mentor-solutions/tree/main/tip-calculator-app/)
+[GitHub Pages](https://nullpuppy.github.io/frontend-mentor-solutions/tip-calculator-app/)
