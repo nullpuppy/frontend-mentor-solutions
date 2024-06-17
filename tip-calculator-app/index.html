@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" type="module" defer></script>
+  <script src="js/main.js" defer></script>
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -18,30 +18,29 @@
     </header>
     <section class="card">
       <div class="calc-input">
-          <label for="bill-total">
+          <label for="bill-total" class="label">
             <span>Bill</span>
             <span class="error" aria-live="polite"></span>
-            <input class="money" name="bill-total" type="text" inputmode="numeric" pattern="\d*\.?\d*" placeholder="0">
+            <input class="money" id="bill-total" name="bill-total" type="text" inputmode="numeric" pattern="\d*\.?\d*" placeholder="0">
           </label>
           <div>
-            <label for="tip-amount">Select Tip %
-              <ul class="tip-amount">
-                <li data-amount="5">5%</li>
-                <li data-amount="10">10%</li>
-                <li data-amount="15">15%</li>
-                <li data-amount="25">25%</li>
-                <li data-amount="50">50%</li>
-                <li data-amount="custom">
-                  <span class="error" aria-live="polite"></span>
-                  <input name="custom-tip" type="text" inputmode="numeric" pattern="\d*\.?\d*" placeholder="Custom" data-amount="custom">
-                </li>
-              </ul>
-            </label>
+            <span class="label">Select Tip %</span>
+            <ul class="tip-amount">
+              <li data-amount="5">5%</li>
+              <li data-amount="10">10%</li>
+              <li data-amount="15">15%</li>
+              <li data-amount="25">25%</li>
+              <li data-amount="50">50%</li>
+              <li data-amount="custom">
+                <span class="error" aria-live="polite"></span>
+                <input name="custom-tip" type="text" inputmode="numeric" pattern="\d*\.?\d*" placeholder="Custom" data-amount="custom">
+              </li>
+            </ul>
           </div>
-          <label for="num-people">
+          <label for="num-people" class="label">
             <span>Number of People</span>
             <span class="error" aria-live="polite"></span>
-            <input class="people" name="num-people" type="text" inputmode="numeric" pattern="\d*\.?\d*" placeholder="0">
+            <input class="people" id="num-people" name="num-people" type="text" inputmode="numeric" pattern="\d*\.?\d*" placeholder="0">
           </label>
       </div>
       <div class="calc-results">
@@ -70,7 +69,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://nullpuppy.github.io/">nullpuppy</a>.
     </div>
   </footer>
 </body>

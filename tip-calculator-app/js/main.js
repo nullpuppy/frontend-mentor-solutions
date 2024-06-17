@@ -57,10 +57,15 @@ function resetForm(el) {
     el.preventDefault(el);
     inputs.forEach((input) => {
         input.value = '';
+        input.classList.remove('error')
     });
 
     tipButtons.forEach((el) => {
         el.classList.remove('selected');
+    });
+
+    document.querySelectorAll('span.error').forEach((el) => {
+        el.textContent = '';
     });
 }
 

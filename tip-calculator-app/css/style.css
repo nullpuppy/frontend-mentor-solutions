@@ -102,7 +102,7 @@ header > .logo {
 
 .calc-input {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .calc-input .tip-amount {
@@ -160,13 +160,12 @@ header > .logo {
     background-image: url('../images/icon-person.svg');
 }
 
-.calc-input label {
+.calc-input .label {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     color: var(--clr-dark-grayish-cyan);
-    padding-block: 1rem;
 }
 
 span.error {
