@@ -67,6 +67,11 @@ function resetForm(el) {
     document.querySelectorAll('span.error').forEach((el) => {
         el.textContent = '';
     });
+
+    let tipPerPersonEl = document.getElementById('tip-per-person');
+    let totalPerPersonEl = document.getElementById('total-per-person');
+    tipPerPersonEl.textContent = "0.00";
+    totalPerPersonEl.textContent = "0.00";
 }
 
 function selectTipPercentage(el) {
